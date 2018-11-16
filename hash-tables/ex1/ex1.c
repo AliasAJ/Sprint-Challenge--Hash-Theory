@@ -6,7 +6,6 @@
 Answer *get_indices_of_item_weights(int *weights, int length, int limit)
 {
   HashTable *ht = create_hash_table(16);
-
   // YOUR CODE HERE
 
   return NULL;
@@ -14,9 +13,12 @@ Answer *get_indices_of_item_weights(int *weights, int length, int limit)
 
 void print_answer(Answer *answer)
 {
-  if (answer != NULL) {
+  if (answer != NULL)
+  {
     printf("%d %d\n", answer->index_1, answer->index_2);
-  } else {
+  }
+  else
+  {
     printf("NULL\n");
   }
 }
